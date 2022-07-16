@@ -1,0 +1,12 @@
+html, body { width: 100; height: 100; marjin: 0 }
+.container { position: relative; width: 100%; height: 100%;}
+.img_box { width: 100%; height: 100%; position: relative; left: 50%; transform: 
+translateX(-50%); background-repeat: no-repeat; background-size: cover; }
+
+.img_box.bg01 { background-image: url(/images/bg01.jpg);}
+.img_box.bg02 { background-image: url(/images/bg02.jpg);}
+.img_box.bg03 { background-image: url(/images/bg03.jpg);}
+.img_box.bg04 { background-image: url(/images/bg04.jpg);}
+
+let randomNumber = Math.floor(Math.random() * 4) + 1;
+document.querySelcetor('img_box').classList.add('bg0' + randomeNumber);
